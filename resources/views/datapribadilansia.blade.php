@@ -91,6 +91,16 @@
 		                             <a class="alert-link" style="font-size:20px">{{ucwords($profile->nama)}}</a>
 									</div>
 		                    	</div>
+							</div>
+							<div class="row form-group">
+		                        <div class="col col-md-3">
+		                            <label for="umur" class=" form-control-label" style="font-size:25px">NIK</label>
+		                        </div>
+		                        <div class="col-12 col-md-9">
+		                         	<div class="alert alert-success" role="alert">
+		                             <a class="alert-link" style="font-size:20px">{{$profile->nik}}</a>
+									</div>
+		                    	</div>
 		                    </div>
 		                    <div class="row form-group">
 		                        <div class="col col-md-3">

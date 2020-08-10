@@ -24,6 +24,7 @@ class inputdatalansiacontroller extends Controller
 
     $validatedData = $request->validate([
         'nama' => 'required',
+        'nik' => 'required',
         'tempatlahir' => 'required',
         'tanggallahir' => 'required',
         'nohp' => 'required',
@@ -44,6 +45,7 @@ class inputdatalansiacontroller extends Controller
     $simpan = Lansia::create([
         'id_lansia' => $user->id,
     	'nama' => $request->nama,
+    	'nik' => $request->nik,
         'tempat_lahir' => $request->tempatlahir,
     	'tgllahir' => $request->tanggallahir,
         'nohp' => $request->nohp,

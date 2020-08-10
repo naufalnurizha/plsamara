@@ -21,6 +21,7 @@
                                             <tr>
                                                 <th>Menu</th>
                                                 <th>Nama</th>
+                                                <th>NIK</th>
                                                 <th>Tempat Lahir</th>
                                                 <th>Tanggal Lahir</th>
                                                 <th>Umur</th>
@@ -43,6 +44,7 @@
                                                     <a href="/datalansia/{{$datum->id_lansia}}" input type="submit" class="btn btn-danger btn-block" value="Delete">Delete</a>
                                                 </td>
                                                 <td><center>{{ucwords($datum->nama)}}</center></td>
+                                                <td><center>{{$datum->nik}}</center></td>
                                                 <td><center>{{ucwords($datum->tempat_lahir)}}</center></td>
                                                 <td><center>{{tgl_indo($datum->tgllahir)}}</center></td>
                                                 <td><center>{{\Carbon\Carbon::parse($datum->tgllahir)->age}}</center></td>

@@ -23,6 +23,14 @@
                                             </div>
                                             <div class="row form-group">
                                                 <div class="col col-md-3">
+                                                    <label for="nik_kader" class=" form-control-label">NIK</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" pattern="[0-9]+" maxlength="16" id="nik_kader" name="nik_kader" placeholder="NIK" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
                                                     <label for="tempatlahir" class=" form-control-label">Tempat Lahir</label>
                                                 </div>
                                                 <div class="col-12 col-md-9">

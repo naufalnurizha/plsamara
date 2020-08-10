@@ -20,6 +20,7 @@
                                             <tr>
                                                 <th>Menu</th>
                                                 <th>Nama</th>
+                                                <th>NIK</th>
                                                 <th>Umur</th>
                                                 <th>Tempat Lahir</th>
                                                 <th>Tanggal Lahir</th>
@@ -37,6 +38,7 @@
                                                 <a href="/datakader/{{$datum->id_kader}}" input type="submit" class="btn btn-danger btn-block" value="Delete">Delete</a>
                                                 </td>
                                                 <td><center>{{ucwords($datum->nama)}}</center></td>
+                                                <td><center>{{$datum->nik_kader}}</center></td>
                                                 <td><center>{{\Carbon\Carbon::parse($datum->tgllahir)->age}}</center></td>
                                                 <td><center>{{ucwords($datum->tempat_lahir)}}</center></td>
                                                 <td><center>{{date_format(date_create($datum->tgllahir), 'd/m/y')}}</center></td>

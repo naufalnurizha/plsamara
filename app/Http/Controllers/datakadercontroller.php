@@ -34,6 +34,7 @@ class datakadercontroller extends Controller
         $data = Kader::find($id);
        
         $data->nama = $request->nama; 
+        $data->nik_kader = $request->nik_kader; 
         $data->tempat_lahir = $request->tempatlahir;
         $data->tgllahir = $request->tanggallahir;
         $data->nohp_kader = $request->nohp_kader;

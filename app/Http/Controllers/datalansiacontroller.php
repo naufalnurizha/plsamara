@@ -36,6 +36,7 @@ class datalansiacontroller extends Controller
         $data = Lansia::find($id);
        
         $data->nama = $request->nama; 
+        $data->nik = $request->nik; 
         $data->tempat_lahir = $request->tempatlahir;
         $data->tgllahir = $request->tanggallahir;
         $data->nohp = $request->nohp;
